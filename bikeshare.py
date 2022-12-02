@@ -24,17 +24,17 @@ def get_filters():
 
 
     # get user input for month (all, january, february, ... , june)
-    month = input('ENTER MONTH you want: ').lower()
+    month = input('ENTER MONTH You Want bike: ').lower()
     while month not in ['all','january', 'february', 'march', 'april', 'may', 'june']:
-        month = input('ENTER MONTH january, february, ... , june : ').lower()
+        month = input('ENTER MONTH please as january, february, ... , june : ').lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input('ENTER DAY (monday , tueday ....) : ').lower()
+    day = input('ENTER DAY please as (monday , tueday ....) : ').lower()
 
     print('-'*40)
     return city, month, day
 except:
-    print("try again")
+    print("try again please")
 
 def load_data(city, month, day):
     """
