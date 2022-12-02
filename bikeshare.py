@@ -33,7 +33,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 except:
-    print("try again")
+    print("try again please")
 
 def load_data(city, month, day):
     """
