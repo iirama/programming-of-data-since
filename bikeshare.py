@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-
+try:
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -32,7 +32,8 @@ def get_filters():
 
     print('-'*40)
     return city, month, day
-
+except:
+    print("try again")
 
 def load_data(city, month, day):
     """
